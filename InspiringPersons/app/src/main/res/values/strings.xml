@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Inspiring Persons</string>
+    <string name="tv_Title">Enter information about inspiring person</string>
+    <string name="tv_Name">Name:</string>
+    <string name="et_Name_hint">enter persons name</string>
+    <string name="tv_BirthDate">Date of Birth:</string>
+    <string name="et_BirthDate_hint">enter persons birthday</string>
+    <string name="tv_ImageLink">Image Link:</string>
+    <string name="et_ImageLink_hint">enter link to persons image</string>
+    <string name="tv_Quote">Quote:</string>
+    <string name="et_Quote_hint">enter persons famous quote</string>
+    <string name="btn_AddPerson">Add Person</string>
+    <string name="btn_ShowList">Check List</string>
+    <string name="tv_Info">Persons Info:</string>
+    <string name="etInfoInput_text">enter few informations</string>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/tv_Title"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:textSize="20sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="@string/tv_Name"/>
+
+    <EditText
+        android:id="@+id/etNameInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/etQuoteInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="@string/et_Name_hint"
+       />
+
+
+    <TextView
+        android:id="@+id/tvBirthDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/etBirthDayInput"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="@string/tv_BirthDate"/>
+
+    <EditText
+        android:id="@+id/etBirthDayInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/etQuoteInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNameInput"
+        android:inputType="date"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="@string/et_BirthDate_hint"/>
+
+    <TextView
+        android:id="@+id/tvImageLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/etImageLinkInput"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="@string/tv_ImageLink"/>
+
+    <EditText
+        android:id="@+id/etImageLinkInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/etQuoteInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etBirthDayInput"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="@string/et_ImageLink_hint" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/etInfoInput"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="@string/tv_Info"/>
+
+    <EditText
+        android:id="@+id/etInfoInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etImageLinkInput"
+        app:layout_constraintStart_toStartOf="@id/etQuoteInput"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="@string/etInfoInput_text"/>
+
+    <TextView
+        android:id="@+id/tvQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/etQuoteInput"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="@string/tv_Quote"/>
+
+    <EditText
+        android:id="@+id/etQuoteInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etInfoInput"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="@string/et_Quote_hint"/>
+
+    <Button
+        android:id="@+id/btnAddPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvQuote"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnShowList"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/btn_AddPerson"/>
+
+    <Button
+        android:id="@+id/btnShowList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etQuoteInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/btn_ShowList"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
